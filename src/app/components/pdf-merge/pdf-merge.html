@@ -1,4 +1,6 @@
 @if ($pdfs().length > 0) {
-  <input type="text" [(ngModel)]="newFileName" placeholder="New Filename" />
-  <button (click)="downloadMergedPDF()">Download merged PDF</button>
+  <input type="text" [(ngModel)]="newFileName" placeholder="filename" />
+  <button (click)="downloadMergedPDF()" [disabled]="!newFileName">
+    Download merged PDF
+  </button>
 }

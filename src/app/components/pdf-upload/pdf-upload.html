@@ -1,1 +1,10 @@
-<input type="file" (change)="uploadFiles($event)" multiple accept=".pdf" />
+<label for="file-upload" class="custom-file-upload">
+  <i class="fa fa-cloud-upload"></i>Choose file(s)
+</label>
+<input
+  id="file-upload"
+  type="file"
+  (change)="uploadFiles($event)"
+  multiple
+  accept=".pdf"
+/>

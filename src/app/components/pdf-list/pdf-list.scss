@@ -17,7 +17,7 @@
   border: none;
   min-height: 60px;
   display: block;
-  background: #814bf6;
+  background: #45248d;
   border-radius: 4px;
   overflow: hidden;
   font-family: Inter, sans-serif;
@@ -26,21 +26,16 @@
 .box {
   padding: 20px 10px;
   border-bottom: solid 1px #ccc;
-  color: white;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
   box-sizing: border-box;
   cursor: move;
-  background: #110e27;
+  background: #ececec;
   font-size: 20px;
   text-align: center;
   font-family: Inter, sans-serif;
-
-  &:last-of-type {
-    border: none;
-  }
 }
 
 .list.cdk-drop-list-dragging .box:not(.cdk-drag-placeholder) {

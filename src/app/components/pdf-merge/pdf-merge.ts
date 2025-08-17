@@ -11,7 +11,7 @@ import { PDFDocument } from 'pdf-lib';
 export class PdfMerge {
   $pdfs = input.required<File[]>();
 
-  newFileName: string = 'merged';
+  newFileName: string = '';
 
   protected async downloadMergedPDF(): Promise<void> {
     const mergedPdf: Uint8Array = await this.mergePdfs();
@@ -24,7 +24,7 @@ export class PdfMerge {
    */
   private async mergePdfs(): Promise<Uint8Array<ArrayBufferLike>> {
     const pdfs = await Promise.all(
-      this.$pdfs().map((file) => this.readPDF(file))
+      this.$pdfs().map((file) => this.readPDF(file)),
     );
     return await this.mergePDFsIntoOne(pdfs);
   }

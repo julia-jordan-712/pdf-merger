@@ -3,3 +3,20 @@
   flex-direction: row;
   gap: 1rem;
 }
+
+input {
+  font: inherit;
+}
+
+button {
+  font: inherit;
+  background-color: #45248d;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 6px 12px;
+
+  &:disabled {
+    opacity: 0.5;
+  }
+}
