@@ -1,0 +1,8 @@
+@let pdfs = this.$pdfs();
+@if (pdfs.length > 0) {
+  <div cdkDropList class="list" (cdkDropListDropped)="drop($event)">
+    @for (pdf of pdfs; track pdf) {
+      <div class="box" cdkDrag>{{ pdf.name }}</div>
+    }
+  </div>
+}
