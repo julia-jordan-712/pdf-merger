@@ -1,0 +1,24 @@
+{
+  "editor.formatOnSave": true,
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[json]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[scss]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.codeActionsOnSave": {
+      "source.addMissingImports": "explicit",
+      "source.organizeImports": "explicit"
+    }
+  },
+  "typescript.preferences.quoteStyle": "double",
+  "typescript.tsdk": "node_modules\\typescript\\lib",
+  "typescript.preferences.importModuleSpecifier": "non-relative",
+  "typescript.preferences.autoImportFileExcludePatterns": [
+    "**/node_modules/@types/node",
+    "**/node_modules/@types/lz-string"
+  ],
+  "cSpell.words": ["Pdfs"]
+}
